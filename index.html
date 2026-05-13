@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduAssist AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="background-glow"></div>
+
+  <div class="container">
+
+    <div class="logo-section">
+      <h1>EduAssist AI</h1>
+      <p>Your AI-powered smart learning assistant</p>
+    </div>
+
+    <div class="card">
+
+      <!-- 🌐 📚 TOOLBAR -->
+      <div class="toolbar">
+
+        <!-- Language Section -->
+        <div class="tool-group">
+          <span class="tool-label">🌐 Language</span>
+          <div class="pill-group">
+            <button class="pill active" onclick="setLanguage('english')">English</button>
+            <button class="pill" onclick="setLanguage('telugu')">Telugu</button>
+            <button class="pill" onclick="setLanguage('hindi')">Hindi</button>
+          </div>
+        </div>
+
+        <!-- Mode Section -->
+        <div class="tool-group">
+          <span class="tool-label">📚 Mode</span>
+          <div class="pill-group">
+            <button class="pill active" onclick="setMode('general')">General</button>
+            <button class="pill" onclick="setMode('math')">Math</button>
+            <button class="pill" onclick="setMode('science')">Science</button>
+            <button class="pill" onclick="setMode('english')">English</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Input Box -->
+      <textarea
+        id="question"
+        placeholder="Ask any study question..."
+      ></textarea>
+
+      <!-- Ask Button -->
+      <button onclick="askAI()">
+        Ask AI
+      </button>
+
+      <!-- Response Box -->
+      <div id="response">
+        Your AI-generated answer will appear here...
+      </div>
+
+    </div>
+
+    <footer>
+      Built for IBM Z × UNSA Sheridan Hackathon 2026
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
